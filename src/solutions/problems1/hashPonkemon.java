@@ -12,6 +12,5 @@ public class hashPonkemon {
 
     int maxSize = nums.length / 2;
 
-        return Math.min(pokemons.size(), maxSize);*/
-
+    return Math.min(pokemons.size(), maxSize);*/
 }
