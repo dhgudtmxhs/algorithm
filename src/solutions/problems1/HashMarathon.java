@@ -2,7 +2,7 @@ package solutions.problems1;
 
 import java.util.HashMap;
 
-public class hashMarathon { // https://school.programmers.co.kr/learn/courses/30/lessons/42576
+public class HashMarathon { // https://school.programmers.co.kr/learn/courses/30/lessons/42576
 
     public static String marathon(String[] participant, String[] completion) {
 
@@ -23,9 +23,6 @@ public class hashMarathon { // https://school.programmers.co.kr/learn/courses/30
 
         return null;
     }
-
-
-
 
 }
 
