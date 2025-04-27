@@ -1,6 +1,7 @@
 import solutions.problems1.ComboMasterIMS2;
 import solutions.problems1.HashMarathon;
 import solutions.problems1.StackReverseWord;
+import solutions.string.KakaoMBTISurvey;
 import solutions.string.StringAnalysis;
 
 import java.io.*;
@@ -24,7 +25,11 @@ public class Main {
             //ComboMasterIMS2.combo();
             //StringAnalysis.analysis();
             //StringAnalysis.cmd();
-            StringAnalysis.factorialRefactor();
+            //StringAnalysis.factorialRefactor();
+
+            String result = KakaoMBTISurvey.Solution(new String[]{"AN", "CF", "MJ", "RT", "NA"}, new int[]{5, 3, 2, 7, 5});
+            System.out.println(result);
+
         } catch(Exception e) {
             logger.log(Level.SEVERE, "An IOException occurred", e);
         }
