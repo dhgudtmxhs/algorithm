@@ -3,6 +3,7 @@ import solutions.problems1.HashMarathon;
 import solutions.problems1.StackReverseWord;
 import solutions.string.KakaoMBTISurvey;
 import solutions.string.StringAnalysis;
+import solutions.string.StringArrSplitX;
 
 import java.io.*;
 import java.util.LinkedList;
@@ -27,8 +28,9 @@ public class Main {
             //StringAnalysis.cmd();
             //StringAnalysis.factorialRefactor();
 
-            String result = KakaoMBTISurvey.Solution(new String[]{"AN", "CF", "MJ", "RT", "NA"}, new int[]{5, 3, 2, 7, 5});
-            System.out.println(result);
+            //String result = KakaoMBTISurvey.Solution(new String[]{"AN", "CF", "MJ", "RT", "NA"}, new int[]{5, 3, 2, 7, 5});
+            //System.out.println(result);
+            int[] lengths = StringArrSplitX.solution("oxooxoxxox");
 
         } catch(Exception e) {
             logger.log(Level.SEVERE, "An IOException occurred", e);
