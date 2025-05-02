@@ -1,5 +1,7 @@
 package solutions.string;
 
+import java.util.Arrays;
+
 public class StringArrSplitX {
 
     public static int[] solution(String myString) {
@@ -25,4 +27,18 @@ public class StringArrSplitX {
 
         return answer;
     }
+
+    public String[] solution2(String my_string) {
+        //  \\s : 공백 문자(스페이스, 탭, 개행 등) \\s+ 한글자 이상
+        return my_string.trim().split(" +");
+    }
+
+    public String[] solution3(String[] strArr) {
+        // Java 배열(T[])은 크기가 고정(fixed-size) 되어 있어서, 요소 하나만 “삭제”하는 메서드는 없다.
+        // List(Collection)으로 변경해 처리 후 다시 배열로 반환한다.
+        return Arrays.stream(strArr)
+                .filter(s -> !s.contains("ad"))
+                .toArray(String[]::new);
+    }
+
 }
